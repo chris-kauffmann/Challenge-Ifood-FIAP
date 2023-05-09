@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<title>Cadastro Restaurante Ifood</title>
+</head>
+<body>
+  
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f20000;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/BOTAO_IFOOD.png" style="height: 60px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Sobre o Ifood</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Cadastre seu Restaurante</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Entrar/Cadastrar</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+    
+      <div id="main" class="container-fluid">
+        <h3 class="page-header">Dados do Restaurante</h3>
+        <form>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="nameRest" class="form-label">Nome do Restaurante</label>
+              <input type="name" class="form-control" id="nameRest">
+            </div>
+            <div class="col-md-6">
+              <label for="telefone" class="form-label">Telefone do Restaurante</label>
+              <input type="telefone" class="form-control" id="telefone">
+            </div>
+            <div class="col-md-6">
+              <label for="cadastroPJ" class="form-label">CNPJ do Restaurante</label>
+              <input type="text" class="form-control" id="cadastroPj" placeholder="Digite apenas números">
+            </div>
+            <div class="col-md-6">
+              <label for="especialRest" class="form-label">Especialidade</label>
+              <select id="especialRest" class="form-select">
+                <option selected>Escolha</option>
+                <option>Pizza</option>
+                <option>Hambúguer</option>
+                <option>Vegetariano</option>
+                <option>Vegano</option>
+                <option>...</option>
+              </select>
+             </div>
+
+             <div class="col-md-6">
+              <label for="restAlim" class="form-label">Restrições Alimentares</label>
+              <select id="restAlim" class="form-select">
+                <option selected>Escolha</option>
+                <option>Zero açúcar</option>
+                <option>Sem glúten</option>
+                <option>Sem lactose</option>
+                <option>...</option>
+              </select>
+             </div>
+
+
+
+
+             <h4 class="page-item">Contato do Representante Legal</h4>
+            
+            <div class="col-md-6">
+              <label for="nomeResp" class="form-label">Nome do Representante Legal</label>
+              <input type="text" class="form-control" id="nomeResp" placeholder="Nome do Responsável">
+            </div>
+            <div class="col-md-6">
+              <label for="sobrenomeResp" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="sobrenomeResp" placeholder="Sobrenome">
+              
+            </div>
+            <div class="col-md-6">
+              <label for="emailResp" class="form-label">Email</label>
+              <input type="text" class="form-control" id="emailResp" placeholder="Email do Responsável">
+              
+            </div>
+            <div class="col-md-6">
+              <label for="celResp" class="form-label">Celular do Responsável com DDD</label>
+              <input type="text" class="form-control" id="celResp" placeholder="Digite apenas números">
+              
+            </div>
+            <div class="col-md-6">
+              <label for="cadastroPF" class="form-label">CPF do Responsável Legal</label>
+              <input type="text" class="form-control" id="cadastroPf" placeholder="Digite apenas números">
+              
+            </div>
+
+            <h5 class="page-item" > Endereço do Restaurante</h5>
+
+            <div class="col-md-4">
+              <label for="inputZip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="Digite apenas números">
+            </div>
+
+            <div class="col-md-4">
+              <label for="estado" class="form-label">Estado</label>
+              <select id="estado" class="form-select">
+                <option selected>Escolha</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="cidade" class="form-label">Cidade</label>
+              <select id="cidade" class="form-select">
+                <option selected>Escolha</option>
+                <option>Niterói</option>
+                <option>São Paulo</option>
+                <option>Belo Horizonte</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="endrestaurante" class="form-label">Endereço do Restaurante</label>
+              <input type="text" class="form-control" id="endrestaurante" placeholder="Digite o endereço com o número">
+              
+            </div>
+            <div class="col-md-6">
+              <label for="complemento" class="form-label">Complemento</label>
+              <input type="text" class="form-control" id="complemento">
+              
+            </div>
+
+            <h6 class="page-item">Já faz entregas?</h6>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Sim
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Não
+              </label>
+            </div>
+            <div class="col-md-6">
+              <label for="tempodelivery" class="form-label">Há quanto tempo faz Delivery/ Tele Entrega?</label>
+              <select id="tempodelivery" class="form-select">
+                <option selected>Escolha</option>
+                <option>Menos de 1 ano</option>
+                <option>Mais de 1 ano</option>
+                <option>2 anos</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="qtdadeentrega" class="form-label">Quantidades de Entregas por mês</label>
+              <input type="text" class="form-control" id="qtdadeentrega" placeholder="Exemplo: 400">
+              
+            </div>
+
+            <div class="col-md-6">
+              <label for="qtdadeentregadores" class="form-label">Quantidades de entregadores</label>
+              <input type="text" class="form-control" id="qtdadeentregadores" placeholder="Exemplo: 5">
+              
+            </div>
+
+        
+            
+
+
+
+        
+          </form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <hr />
+  <div id="actions" class="row">
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-danger">Cadastrar</button>
+      <a href="cadastroifood.html" class="btn btn-default">Cancelar</a>
+    </div>
+  </div>
+</form>
+      
+</body>
+</html>
